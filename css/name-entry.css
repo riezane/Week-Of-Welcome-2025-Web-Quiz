@@ -1,0 +1,44 @@
+.name-entry-content {
+  text-align: center;
+}
+
+.name-entry-content h2 {
+  font-family: "Google Sans", sans-serif;
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.name-entry-content p {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.name-input-section {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#player-name-input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid var(--border);
+  border-radius: 25px;
+  font-size: 1.1rem;
+  text-align: center;
+  background: var(--surface);
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+#player-name-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.name-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}

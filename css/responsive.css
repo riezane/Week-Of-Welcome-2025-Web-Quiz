@@ -1,0 +1,122 @@
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 15px;
+  }
+
+  .site-title {
+    font-size: 16px;
+  }
+
+  .header-nav {
+    gap: 10px;
+  }
+
+  .nav-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .screen {
+    padding: 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-stats {
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .quiz-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .stats-section {
+    justify-content: center;
+  }
+
+  #question-text {
+    font-size: 1.2rem;
+  }
+
+  .option {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+
+  .fill-blank-input {
+    width: 150px;
+    margin: 5px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons .btn {
+    min-width: auto;
+  }
+
+  .boolean-options {
+    grid-template-columns: 1fr;
+  }
+
+  .result-actions {
+    flex-direction: column;
+  }
+
+  .result-actions .btn {
+    min-width: auto;
+  }
+
+  .name-actions {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  #question-text {
+    font-size: 1.1rem;
+  }
+
+  .final-score-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .quiz-header {
+    gap: 15px;
+  }
+
+  .stats-section {
+    gap: 15px;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

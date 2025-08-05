@@ -1,0 +1,53 @@
+.about-content {
+  text-align: left;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Google Sans", sans-serif;
+}
+
+.about-section {
+  margin-bottom: 30px;
+}
+
+.about-section h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-family: "Google Sans", sans-serif;
+}
+
+.about-section p {
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-section li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  color: var(--text-primary);
+}
+
+.about-section li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.about-actions {
+  text-align: center;
+  margin-top: 40px;
+}

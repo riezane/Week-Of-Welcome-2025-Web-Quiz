@@ -1,0 +1,141 @@
+.results-content {
+  text-align: center;
+}
+
+.results-header {
+  margin-bottom: 30px;
+}
+
+.trophy-icon {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.results-header h1 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  font-family: "Google Sans", sans-serif;
+}
+
+.player-name-display {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.score-breakdown {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.score-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.score-item.easy {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.score-item.medium {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.score-item.hard {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.final-score-card {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.final-score-card h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: "Google Sans", sans-serif;
+}
+
+.score-message {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.quiz-stats {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.wrong-answers-section {
+  background: var(--background);
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.wrong-answers-section h3 {
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  font-family: "Google Sans", sans-serif;
+}
+
+.wrong-answers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrong-answer-item {
+  padding: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.wrong-answer-question {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.wrong-answer-correct {
+  color: var(--secondary-color);
+}
+
+.result-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.result-actions .btn {
+  flex: 1;
+  min-width: 150px;
+}

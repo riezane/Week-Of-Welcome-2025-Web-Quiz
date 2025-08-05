@@ -1,0 +1,55 @@
+[data-theme="dark"] {
+  --background: #1a1a1a;
+  --surface: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #888888;
+  --border: #404040;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --gradient: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+[data-theme="dark"] .hint-container {
+  background: #3d3d00;
+  border-color: #666600;
+}
+
+[data-theme="dark"] .hint-content {
+  color: #ffeb3b;
+}
+
+[data-theme="dark"] .result-message.correct {
+  background: #1e4620;
+  color: #4caf50;
+  border-color: #2e7d32;
+}
+
+[data-theme="dark"] .result-message.incorrect {
+  background: #4a1e1e;
+  color: #f44336;
+  border-color: #d32f2f;
+}
+
+[data-theme="dark"] .result-message.timeout {
+  background: #3d3d00;
+  color: #ffeb3b;
+  border-color: #666600;
+}
+
+[data-theme="dark"] .score-item.easy {
+  background: #1e4620;
+  color: #4caf50;
+  border-color: #2e7d32;
+}
+
+[data-theme="dark"] .score-item.medium {
+  background: #3d3d00;
+  color: #ffeb3b;
+  border-color: #666600;
+}
+
+[data-theme="dark"] .score-item.hard {
+  background: #4a1e1e;
+  color: #f44336;
+  border-color: #d32f2f;
+}

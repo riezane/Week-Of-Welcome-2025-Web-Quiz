@@ -1,0 +1,46 @@
+.game-over-content {
+  text-align: center;
+}
+
+.game-over-title {
+  font-size: 2.5rem;
+  color: var(--danger-color);
+  margin-bottom: 10px;
+  font-family: "Google Sans", sans-serif;
+}
+
+.game-over-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.partial-progress {
+  background: var(--background);
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.partial-progress h3 {
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  font-family: "Google Sans", sans-serif;
+}
+
+.partial-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.partial-score-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}

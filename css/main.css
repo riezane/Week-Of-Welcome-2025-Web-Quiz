@@ -1,0 +1,38 @@
+.main-content {
+  flex: 1;
+  padding: 40px 0;
+  background: var(--gradient);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.screen {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px var(--shadow);
+  display: none;
+  animation: slideIn 0.5s ease-out;
+  border: 1px solid var(--border);
+}
+
+.screen.active {
+  display: block;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
