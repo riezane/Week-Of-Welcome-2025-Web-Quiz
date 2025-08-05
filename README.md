@@ -4,11 +4,11 @@ Test your tech knowledge and compete with others in this interactive quiz design
 
 ## 📋 Overview
 
-The **Google Week of Welcome Quiz 2025** is a web-based application that challenges users with 30 technology-related questions across three difficulty levels: Easy, Medium, and Hard. With a mix of multiple-choice, true/false, and fill-in-the-blank questions, the quiz tests knowledge in programming, web development, databases, and computer science fundamentals. Questions are randomized for a unique experience each time, and a local leaderboard tracks high scores on the device.
+The **GDGoC Week of Welcome Quiz 2025** is a web-based application that challenges users with 30 technology-related questions across three difficulty levels: Easy, Medium, and Hard. With a mix of multiple-choice, true/false, and fill-in-the-blank questions, the quiz tests knowledge in programming, web development, databases, and computer science fundamentals. Questions are randomized for a unique experience each time, and a local leaderboard tracks high scores on the device.
 
 ### 🎯 Purpose
 
-This quiz aims to engage users in a fun and educational way, celebrating Google's Week of Welcome by testing and expanding their tech knowledge. Whether you're a beginner or a seasoned tech enthusiast, the quiz offers a range of challenges to suit all levels.
+This quiz aims to engage users in a fun and educational way, celebrating USTP's Week of Welcome by testing and expanding their tech knowledge. Whether you're a beginner or a seasoned tech enthusiast, the quiz offers a range of challenges to suit all levels.
 
 ### 🎨 Features
 
