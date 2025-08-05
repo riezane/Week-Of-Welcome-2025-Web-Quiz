@@ -593,7 +593,7 @@ function updateSubmitButton() {
 }
 
 function startTimer() {
-  timeLeft = 30
+  timeLeft = 20
   timerActive = true
   updateTimerDisplay()
 
