@@ -95,7 +95,10 @@ This quiz aims to engage users in a fun and educational way, celebrating Google'
 
 ## 🖼️ Screenshots
 
-- TBA
+<img width="810" height="834" alt="image" src="https://github.com/user-attachments/assets/2207b33a-e5b9-4165-b356-bcb6cf0fa29a" />
+<img width="802" height="544" alt="image" src="https://github.com/user-attachments/assets/3b550a0a-9d75-4ec4-90c9-3df61abcd381" />
+<img width="802" height="622" alt="image" src="https://github.com/user-attachments/assets/747adc04-e75c-42c0-ad92-ee57fd8ce432" />
+
 
 ## 🤝 Contributing
 
