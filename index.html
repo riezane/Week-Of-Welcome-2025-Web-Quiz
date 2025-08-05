@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Week of Welcome Quiz 2025</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/results.css">
+    <link rel="stylesheet" href="css/game-over.css">
+    <link rel="stylesheet" href="css/leaderboard.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/name-entry.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="google-logo">
+                    <span class="logo-g">G</span>
+                    <span class="logo-o1">o</span>
+                    <span class="logo-o2">o</span>
+                    <span class="logo-g2">g</span>
+                    <span class="logo-l">l</span>
+                    <span class="logo-e">e</span>
+                </div>
+                <div class="site-title">WoW Quiz 2025</div>
+            </div>
+            <nav class="header-nav">
+                <button id="leaderboard-nav-btn" class="nav-btn">🏆 Leaderboard</button>
+                <button id="about-nav-btn" class="nav-btn">ℹ️ About</button>
+                <div class="theme-toggle-nav">
+                    <label class="switch">
+                        <input type="checkbox" id="header-dark-mode-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="theme-icon" id="header-theme-icon">☀️</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Welcome Screen -->
+            <div id="welcome-screen" class="screen active">
+                <div class="welcome-content">
+                    <div class="hero-section">
+                        <h1 class="hero-title">Google Week of Welcome Quiz 2025</h1>
+                        <p class="hero-subtitle">Test your tech knowledge and compete with others!</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">30</span>
+                                <span class="stat-label">Questions</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Difficulty Levels</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Lives</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rules-card">
+                        <h3>📋 How to Play:</h3>
+                        <ul>
+                            <li>30 questions total (10 Easy, 10 Medium, 10 Hard)</li>
+                            <li>You have 5 lives - lose all lives and the quiz ends</li>
+                            <li>30 seconds per question with timer</li>
+                            <li>3 hints available throughout the quiz</li>
+                            <li>Select your answer and click Submit</li>
+                            <li>Questions are randomized each time!</li>
+                        </ul>
+                    </div>
+
+                    <div class="action-section">
+                        <button id="start-btn" class="btn btn-primary btn-large">
+                            🚀 Start Quiz
+                        </button>
+                        <button id="view-leaderboard-btn" class="btn btn-secondary">
+                            🏆 View Leaderboard
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Name Entry Screen -->
+            <div id="name-entry-screen" class="screen">
+                <div class="name-entry-content">
+                    <h2>🎯 Ready to Start?</h2>
+                    <p>Enter your name to save your score to the leaderboard!</p>
+                    <div class="name-input-section">
+                        <input type="text" id="player-name-input" placeholder="Enter your name..." maxlength="20">
+                        <div class="name-actions">
+                            <button id="start-with-name-btn" class="btn btn-primary">Start Quiz</button>
+                            <button id="start-anonymous-btn" class="btn btn-secondary">Play Anonymously</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Screen -->
+            <div id="quiz-screen" class="screen">
+                <div class="quiz-header">
+                    <div class="progress-section">
+                        <div class="difficulty-info">
+                            <span class="difficulty-badge" id="current-difficulty">Easy</span>
+                            <span class="question-counter" id="question-counter">1/10</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="stats-section">
+                        <div class="timer">
+                            <span class="timer-icon">⏱️</span>
+                            <span class="timer-text" id="timer">30s</span>
+                        </div>
+                        <div class="lives" id="lives">
+                            <span class="heart">❤️</span>
+                            <span class="heart">❤️</span>
+                            <span class="heart">❤️</span>
+                            <span class="heart">❤️</span>
+                            <span class="heart">❤️</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <h2 id="question-text"></h2>
+                    
+                    <div id="hint-container" class="hint-container" style="display: none;">
+                        <div class="hint-content">
+                            <span class="hint-icon">💡</span>
+                            <span id="hint-text"></span>
+                        </div>
+                    </div>
+
+                    <div id="options-container" class="options-container"></div>
+
+                    <div id="result-container" class="result-container" style="display: none;">
+                        <div id="result-message" class="result-message"></div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button id="submit-btn" class="btn btn-primary" disabled>Submit Answer</button>
+                        <button id="hint-btn" class="btn btn-secondary">
+                            <span class="hint-icon">💡</span>
+                            Hint (<span id="hints-left">3</span> left)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="results-screen" class="screen">
+                <div class="results-content">
+                    <div class="results-header">
+                        <div class="trophy-icon">🏆</div>
+                        <h1>Quiz Complete!</h1>
+                        <div class="player-name-display" id="player-name-display"></div>
+                    </div>
+
+                    <div class="score-breakdown">
+                        <div class="score-item easy">
+                            <span class="difficulty-label">Easy</span>
+                            <span class="score" id="easy-score">0/10</span>
+                        </div>
+                        <div class="score-item medium">
+                            <span class="difficulty-label">Medium</span>
+                            <span class="score" id="medium-score">0/10</span>
+                        </div>
+                        <div class="score-item hard">
+                            <span class="difficulty-label">Hard</span>
+                            <span class="score" id="hard-score">0/10</span>
+                        </div>
+                    </div>
+
+                    <div class="final-score-card">
+                        <h2>Final Score: <span id="final-score">0/30</span></h2>
+                        <div id="score-message" class="score-message"></div>
+                        <div class="quiz-stats">
+                            <span>Hints used: <span id="hints-used-display">0</span>/3</span>
+                            <span>•</span>
+                            <span>Rank: <span id="player-rank">#-</span></span>
+                        </div>
+                    </div>
+
+                    <div id="wrong-answers-section" class="wrong-answers-section" style="display: none;">
+                        <h3>📝 Review Wrong Answers:</h3>
+                        <div id="wrong-answers-list" class="wrong-answers-list"></div>
+                    </div>
+
+                    <div class="result-actions">
+                        <button id="play-again-btn" class="btn btn-primary">
+                            <span class="icon">🔄</span>
+                            Play Again
+                        </button>
+                        <button id="view-leaderboard-results-btn" class="btn btn-secondary">
+                            <span class="icon">🏆</span>
+                            View Leaderboard
+                        </button>
+                        <button id="share-btn" class="btn btn-secondary">
+                            <span class="icon">📤</span>
+                            Share Results
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Over Screen -->
+            <div id="game-over-screen" class="screen">
+                <div class="game-over-content">
+                    <h1 class="game-over-title">Game Over!</h1>
+                    <p class="game-over-subtitle">You've run out of lives!</p>
+                    <div class="player-name-display" id="game-over-player-name"></div>
+
+                    <div class="partial-progress">
+                        <h3>Your Progress:</h3>
+                        <div id="partial-breakdown" class="partial-breakdown"></div>
+                    </div>
+
+                    <div class="result-actions">
+                        <button id="try-again-btn" class="btn btn-primary">
+                            <span class="icon">🔄</span>
+                            Try Again
+                        </button>
+                        <button id="view-leaderboard-gameover-btn" class="btn btn-secondary">
+                            <span class="icon">🏆</span>
+                            View Leaderboard
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leaderboard Screen -->
+            <div id="leaderboard-screen" class="screen">
+                <div class="leaderboard-content">
+                    <div class="leaderboard-header">
+                        <h1>🏆 Leaderboard</h1>
+                        <p>Top performers in the Google Week of Welcome Quiz 2025</p>
+                    </div>
+
+                    <div class="leaderboard-controls">
+                        <button id="clear-leaderboard-btn" class="btn btn-danger btn-small">
+                            🗑️ Clear All Scores
+                        </button>
+                    </div>
+
+                    <div id="leaderboard-list" class="leaderboard-list">
+                        <div class="no-scores">
+                            <p>No scores yet! Be the first to complete the quiz.</p>
+                        </div>
+                    </div>
+
+                    <div class="leaderboard-actions">
+                        <button id="back-to-home-btn" class="btn btn-primary">
+                            🏠 Back to Home
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Screen -->
+            <div id="about-screen" class="screen">
+                <div class="about-content">
+                    <h1>ℹ️ About This Quiz</h1>
+                    <div class="about-section">
+                        <h3>🎯 Purpose</h3>
+                        <p>Welcome to Google's Week of Welcome Quiz 2025! This interactive quiz is designed to test your technology knowledge across various topics including programming, web development, databases, and computer science fundamentals.</p>
+                    </div>
+                    <div class="about-section">
+                        <h3>🏗️ How It Works</h3>
+                        <ul>
+                            <li><strong>Three Difficulty Levels:</strong> Easy, Medium, and Hard questions</li>
+                            <li><strong>Question Types:</strong> Multiple choice, True/False, and Fill-in-the-blank</li>
+                            <li><strong>Randomized Order:</strong> Questions are shuffled for a unique experience each time</li>
+                            <li><strong>Local Leaderboard:</strong> Compete with others on the same device</li>
+                            <li><strong>Hint System:</strong> Get help when you need it (limited to 3 hints)</li>
+                        </ul>
+                    </div>
+                    <div class="about-section">
+                        <h3>🎨 Features</h3>
+                        <ul>
+                            <li>Dark/Light mode support</li>
+                            <li>Responsive design for all devices</li>
+                            <li>Progress tracking and detailed results</li>
+                            <li>Share your results with friends</li>
+                            <li>Review wrong answers after completion</li>
+                        </ul>
+                    </div>
+                    <div class="about-actions">
+                        <button id="back-to-home-about-btn" class="btn btn-primary">
+                            🏠 Back to Home
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Google Week of Welcome Quiz 2025</h4>
+                    <p>Test your tech knowledge and compete with others in this comprehensive technology quiz.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#" id="footer-home">Home</a></li>
+                        <li><a href="#" id="footer-leaderboard">Leaderboard</a></li>
+                        <li><a href="#" id="footer-about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Stats</h4>
+                    <ul>
+                        <li>30 Tech Questions</li>
+                        <li>3 Difficulty Levels</li>
+                        <li>Unlimited Attempts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Google Week of Welcome Quiz. Built for learning and fun! 🚀</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h3 id="modal-title">Confirm Action</h3>
+            <p id="modal-message">Are you sure you want to proceed?</p>
+            <div class="modal-actions">
+                <button id="modal-confirm-btn" class="btn btn-danger">Confirm</button>
+                <button id="modal-cancel-btn" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
