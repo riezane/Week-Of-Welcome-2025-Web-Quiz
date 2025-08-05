@@ -108,6 +108,16 @@ Contributions are welcome! To contribute:
 
 Please ensure your code follows the existing style and includes appropriate comments.
 
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- This Project is for USTP's Week of Welcome 2025.
+- Built with HTML, CSS, and JavaScript, with no external dependencies.
+- Uses Google Sans font and Google's color palette.
+
 ---
 
 Happy quizzing! 🚀 Test your tech knowledge and aim for the top of the leaderboard!
