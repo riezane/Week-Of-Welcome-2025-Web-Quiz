@@ -4,11 +4,11 @@ Test your tech knowledge and compete with others in this interactive quiz design
 
 ## 📋 Overview
 
-The **Google Week of Welcome Quiz 2025** is a web-based application that challenges users with 30 technology-related questions across three difficulty levels: Easy, Medium, and Hard. With a mix of multiple-choice, true/false, and fill-in-the-blank questions, the quiz tests knowledge in programming, web development, databases, and computer science fundamentals. Questions are randomized for a unique experience each time, and a local leaderboard tracks high scores on the device.
+The **GDGoC Week of Welcome Quiz 2025** is a web-based application that challenges users with 30 technology-related questions across three difficulty levels: Easy, Medium, and Hard. With a mix of multiple-choice, true/false, and fill-in-the-blank questions, the quiz tests knowledge in programming, web development, databases, and computer science fundamentals. Questions are randomized for a unique experience each time, and a local leaderboard tracks high scores on the device.
 
 ### 🎯 Purpose
 
-This quiz aims to engage users in a fun and educational way, celebrating Google's Week of Welcome by testing and expanding their tech knowledge. Whether you're a beginner or a seasoned tech enthusiast, the quiz offers a range of challenges to suit all levels.
+This quiz aims to engage users in a fun and educational way, celebrating USTP's Week of Welcome by testing and expanding their tech knowledge. Whether you're a beginner or a seasoned tech enthusiast, the quiz offers a range of challenges to suit all levels.
 
 ### 🎨 Features
 
@@ -95,7 +95,10 @@ This quiz aims to engage users in a fun and educational way, celebrating Google'
 
 ## 🖼️ Screenshots
 
-- TBA
+<img width="810" height="834" alt="image" src="https://github.com/user-attachments/assets/2207b33a-e5b9-4165-b356-bcb6cf0fa29a" />
+<img width="802" height="544" alt="image" src="https://github.com/user-attachments/assets/3b550a0a-9d75-4ec4-90c9-3df61abcd381" />
+<img width="802" height="622" alt="image" src="https://github.com/user-attachments/assets/747adc04-e75c-42c0-ad92-ee57fd8ce432" />
+
 
 ## 🤝 Contributing
 
@@ -107,6 +110,16 @@ Contributions are welcome! To contribute:
 5. Open a pull request.
 
 Please ensure your code follows the existing style and includes appropriate comments.
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- This Project is for USTP's Week of Welcome 2025.
+- Built with HTML, CSS, and JavaScript, with no external dependencies.
+- Uses Google Sans font and Google's color palette.
 
 ---
 
