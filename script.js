@@ -29,7 +29,7 @@ const quizData = {
         "d) Central Program Utility",
       ],
       answer: "a",
-      hint: "It’s not the one with the most technical-sounding name—think basic.",
+      hint: "It’s called the ‘brain’ of the computer—and it processes instructions centrally.",
     },
     {
       question: "HTML is used to style web pages. True or False?",
@@ -46,7 +46,7 @@ const quizData = {
     {
       question: "Which company makes the iPhone?",
       type: "multiple",
-      options: ["a) Apple", "b) iOS", "c) Mac", "d) iPhone Inc."],
+      options: ["a) Apple", "b) iOS", "c) Google", "d) iPhone Inc."],
       answer: "a",
       hint: "Don’t let the product names confuse you—think company.",
     },
@@ -65,7 +65,7 @@ const quizData = {
     {
       question: "Which of these is a web browser?",
       type: "multiple",
-      options: ["a) Google", "b) Computer", "c) Word", "d) Chrome"],
+      options: ["a) Google", "b) Computer", "c) Android", "d) Chrome"],
       answer: "d",
       hint: "You're probably using one right now to view this quiz!",
     },
@@ -76,17 +76,17 @@ const quizData = {
       hint: "The 'wireless' in WiFi is a big clue.",
     },
     {
-      question: "AI stands for Artificial ____",
+      question: "AI stands for ____ intelligence",
       type: "fill",
-      answer: "intelligence",
-      hint: "It’s not 'imagination'—even though it sometimes feels like it.",
+      answer: "artificial",
+      hint: "It’s the kind of intelligence that isn’t naturally born—but is man-made.",
     },
     {
-      question: "Which combo copies text on most keyboards?",
+      question: "What is the name of Google's latest AI model?",
       type: "multiple",
-      options: ["a) Ctrl + V", "b) Ctrl + Z", "c) Ctrl + X", "d) Ctrl + C"],
-      answer: "d",
-      hint: "Think 'C' for Copy—not Cut or Paste.",
+      options: ["a) Bard", "b) Gemini", "c) ChatGPT", "d) Deepseek"],
+      answer: "b",
+      hint: "It recently replaced another AI with a poetic name.",
     },
   ],
   medium: [
