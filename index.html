@@ -51,48 +51,110 @@
         <div class="container">
             <!-- Welcome Screen -->
             <div id="welcome-screen" class="screen active">
-                <div class="welcome-content">
-                    <div class="hero-section">
-                        <h1 class="hero-title">Google Week of Welcome Quiz 2025</h1>
-                        <p class="hero-subtitle">Test your tech knowledge and compete with others!</p>
-                        <div class="hero-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">30</span>
-                                <span class="stat-label">Questions</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">50+</span>
-                                <span class="stat-label">Question Pool</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">5</span>
-                                <span class="stat-label">Lives</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="rules-card">
-                        <h3>📋 How to Play:</h3>
-                        <ul>
-                            <li>30 questions randomly selected from 50+ question pool</li>
-                            <li>You have 5 lives - lose all lives and the quiz ends</li>
-                            <li>30 seconds per question with timer</li>
-                            <li>3 hints available throughout the quiz</li>
-                            <li>Select your answer and click Submit</li>
-                            <li>Each quiz session is unique with different questions!</li>
-                        </ul>
-                    </div>
+    <div class="welcome-content">
+        <div class="hero-section">
+            <div class="hero-badge">
+                <span class="badge-text">🎓 Google Week of Welcome 2025</span>
+            </div>
+            <h1 class="hero-title">Tech Knowledge Quiz</h1>
+            <p class="hero-subtitle">Challenge yourself with randomized questions from our extensive tech database!</p>
 
-                    <div class="action-section">
-                        <button id="start-btn" class="btn btn-primary btn-large">
-                            🚀 Start Quiz
-                        </button>
-                        <button id="view-leaderboard-btn" class="btn btn-secondary">
-                            🏆 View Leaderboard
-                        </button>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Questions</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Difficulty Levels</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Lives</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Hints</span>
+                </div>
+            </div>
+        </div>
+        
+            <div class="hero-features">
+                <div class="feature-item">
+                    <div class="feature-icon">🎲</div>
+                    <div class="feature-text">
+                        <strong>Randomized Questions</strong>
+                        <span>30 unique questions from 50+ pool</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-text">
+                        <strong>Timed Challenge</strong>
+                        <span>30 seconds per question</span>
                     </div>
                 </div>
             </div>
+        
+        <div class="rules-card">
+            <div class="rules-header">
+                <h3>📋 How to Play</h3>
+                <div class="difficulty-preview">
+                    <span class="diff-badge easy">Easy</span>
+                    <span class="diff-badge medium">Medium</span>
+                    <span class="diff-badge hard">Hard</span>
+                </div>
+            </div>
+            <div class="rules-grid">
+                <div class="rule-item">
+                    <div class="rule-icon">🎯</div>
+                    <div class="rule-content">
+                        <strong>30 Random Questions</strong>
+                        <p>10 questions from each difficulty level, randomly selected from our extensive database</p>
+                    </div>
+                </div>
+                <div class="rule-item">
+                    <div class="rule-icon">❤️</div>
+                    <div class="rule-content">
+                        <strong>5 Lives System</strong>
+                        <p>Wrong answers cost lives. Game ends when all lives are lost</p>
+                    </div>
+                </div>
+                <div class="rule-item">
+                    <div class="rule-icon">⏰</div>
+                    <div class="rule-content">
+                        <strong>Time Pressure</strong>
+                        <p>30 seconds per question keeps the challenge exciting</p>
+                    </div>
+                </div>
+                <div class="rule-item">
+                    <div class="rule-icon">💡</div>
+                    <div class="rule-content">
+                        <strong>Hint System</strong>
+                        <p>Use up to 3 hints throughout the entire quiz when you're stuck</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-section">
+            <button id="start-btn" class="btn btn-primary btn-large">
+                <span class="btn-icon">🚀</span>
+                Start Your Challenge
+            </button>
+            <div class="secondary-actions">
+                <button id="view-leaderboard-btn" class="btn btn-secondary">
+                    <span class="btn-icon">🏆</span>
+                    View Leaderboard
+                </button>
+                <button id="about-nav-btn-home" class="btn btn-outline">
+                    <span class="btn-icon">ℹ️</span>
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
             <!-- Name Entry Screen -->
             <div id="name-entry-screen" class="screen">
@@ -274,40 +336,147 @@
 
             <!-- About Screen -->
             <div id="about-screen" class="screen">
-                <div class="about-content">
-                    <h1>ℹ️ About This Quiz</h1>
-                    <div class="about-section">
-                        <h3>🎯 Purpose</h3>
-                        <p>Welcome to Google's Week of Welcome Quiz 2025! This interactive quiz is designed to test your technology knowledge across various topics including programming, web development, databases, and computer science fundamentals.</p>
-                    </div>
-                    <div class="about-section">
-                        <h3>🏗️ How It Works</h3>
-                        <ul>
-                            <li><strong>Three Difficulty Levels:</strong> Easy, Medium, and Hard questions</li>
-                            <li><strong>Question Types:</strong> Multiple choice, True/False, and Fill-in-the-blank</li>
-                            <li><strong>Randomized Selection:</strong> 30 questions randomly selected from 50+ question pool</li>
-                            <li><strong>Local Leaderboard:</strong> Compete with others on the same device</li>
-                            <li><strong>Hint System:</strong> Get help when you need it (limited to 3 hints)</li>
-                        </ul>
-                    </div>
-                    <div class="about-section">
-                        <h3>🎨 Features</h3>
-                        <ul>
-                            <li>Dark/Light mode support</li>
-                            <li>Responsive design for all devices</li>
-                            <li>Progress tracking and detailed results</li>
-                            <li>Share your results with friends</li>
-                            <li>Review wrong answers after completion</li>
-                            <li>Floating navigation for easy access</li>
-                        </ul>
-                    </div>
-                    <div class="about-actions">
-                        <button id="back-to-home-about-btn" class="btn btn-primary">
-                            🏠 Back to Home
-                        </button>
+    <div class="about-content">
+        <div class="about-header">
+            <div class="about-hero">
+                <h1>ℹ️ About This Quiz</h1>
+                <p class="about-subtitle">Everything you need to know about the Google Week of Welcome Quiz 2025</p>
+            </div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-card primary">
+                <div class="card-header">
+                    <div class="card-icon">🎯</div>
+                    <h3>Purpose & Mission</h3>
+                </div>
+                <div class="card-content">
+                    <p>Welcome to Google's Week of Welcome Quiz 2025! This interactive quiz is designed to test your technology knowledge across various topics including programming, web development, databases, and computer science fundamentals.</p>
+                    <p>Our mission is to create an engaging learning experience that challenges both beginners and experienced developers.</p>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="card-header">
+                    <div class="card-icon">🏗️</div>
+                    <h3>How It Works</h3>
+                </div>
+                <div class="card-content">
+                    <div class="feature-list">
+                        <div class="feature-item-about">
+                            <strong>🎲 Randomized Experience:</strong>
+                            <span>30 questions randomly selected from 50+ question pool ensures unique experience every time</span>
+                        </div>
+                        <div class="feature-item-about">
+                            <strong>📊 Three Difficulty Levels:</strong>
+                            <span>Easy, Medium, and Hard questions progressively test your knowledge</span>
+                        </div>
+                        <div class="feature-item-about">
+                            <strong>📝 Multiple Question Types:</strong>
+                            <span>Multiple choice, True/False, and Fill-in-the-blank questions</span>
+                        </div>
+                        <div class="feature-item-about">
+                            <strong>🏆 Competitive Leaderboard:</strong>
+                            <span>Compare your scores with other players and track your progress</span>
+                        </div>
+                        <div class="feature-item-about">
+                            <strong>💡 Smart Hint System:</strong>
+                            <span>Get help when you need it with our limited hint system</span>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="about-card">
+                <div class="card-header">
+                    <div class="card-icon">🎨</div>
+                    <h3>Features & Technology</h3>
+                </div>
+                <div class="card-content">
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">🌓</div>
+                            <div class="tech-text">
+                                <strong>Dark/Light Mode</strong>
+                                <span>Adaptive theme support</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📱</div>
+                            <div class="tech-text">
+                                <strong>Responsive Design</strong>
+                                <span>Works on all devices</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📊</div>
+                            <div class="tech-text">
+                                <strong>Progress Tracking</strong>
+                                <span>Detailed results & analytics</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📤</div>
+                            <div class="tech-text">
+                                <strong>Social Sharing</strong>
+                                <span>Share your achievements</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🔄</div>
+                            <div class="tech-text">
+                                <strong>Review System</strong>
+                                <span>Learn from wrong answers</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🏠</div>
+                            <div class="tech-text">
+                                <strong>Easy Navigation</strong>
+                                <span>Floating buttons & shortcuts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card highlight">
+                <div class="card-header">
+                    <div class="card-icon">🚀</div>
+                    <h3>Ready to Start?</h3>
+                </div>
+                <div class="card-content">
+                    <p>Test your knowledge across programming languages, web technologies, databases, algorithms, and more. Each quiz session is unique thanks to our randomization system!</p>
+                    <div class="cta-stats">
+                        <div class="cta-stat">
+                            <span class="cta-number">50+</span>
+                            <span class="cta-label">Questions in Pool</span>
+                        </div>
+                        <div class="cta-stat">
+                            <span class="cta-number">30</span>
+                            <span class="cta-label">Per Session</span>
+                        </div>
+                        <div class="cta-stat">
+                            <span class="cta-number">∞</span>
+                            <span class="cta-label">Attempts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-actions">
+            <button id="start-quiz-about" class="btn btn-primary btn-large">
+                <span class="btn-icon">🚀</span>
+                Start Quiz Now
+            </button>
+            <button id="back-to-home-about-btn" class="btn btn-secondary">
+                <span class="btn-icon">🏠</span>
+                Back to Home
+            </button>
+        </div>
+    </div>
+</div>
         </div>
     </main>
 
