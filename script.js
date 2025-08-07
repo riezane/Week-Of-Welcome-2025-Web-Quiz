@@ -120,7 +120,7 @@ const quizData = {
         "d) Application Process Integration",
       ],
       answer: "a",
-      hint: "It's how different software applications communicate with each other.",
+      hint: "It lets apps 'talk' to each other—think: application + coding + connection point.",
     },
     {
       question: "Python is a compiled programming language.",
@@ -132,7 +132,7 @@ const quizData = {
       question: "Complete: SQL stands for Structured ____ Language",
       type: "fill",
       answer: "query",
-      hint: "It's used to ask questions to databases.",
+      hint: "In SQL, you don’t give commands—you ask. That’s why it starts with a ‘Q’.",
     },
     {
       question: "Which HTTP status code indicates 'Not Found'?",
@@ -152,7 +152,7 @@ const quizData = {
       question: "Complete: IDE stands for Integrated Development ____",
       type: "fill",
       answer: "environment",
-      hint: "It's where developers write and test their code.",
+      hint: "Starts with the letter 'E'. Think of it as the digital workspace where everything a developer needs is built in.",
     },
     {
       question: "Which of these is NOT a database management system?",
@@ -180,7 +180,7 @@ const quizData = {
       question: "Complete: The command to install packages in Node.js is 'npm ____'",
       type: "fill",
       answer: "install",
-      hint: "You run this to bring dependencies into your project.",
+      hint: "You run this to bring dependencies into your project. Like after downloading an app you need to install it.",
     },
     {
       question: "Which design pattern ensures a class has only one instance?",
@@ -199,7 +199,7 @@ const quizData = {
       question: "Complete: CRUD stands for Create, Read, Update, ____",
       type: "fill",
       answer: "delete",
-      hint: "The four basic operations you can perform on data.",
+      hint: "After creating and updating data, sometimes you need to remove it too.",
     },
     {
       question: "What does ACID stand for in database transactions?",
@@ -217,7 +217,7 @@ const quizData = {
       question: "The programming language Go was developed at Google.",
       type: "boolean",
       answer: true,
-      hint: "It's also known as Golang and was designed for simplicity and concurrency.",
+      hint: "Its nickname is Golang, and it was created to improve productivity at a big tech company famous for search.",
     },
     {
       question: "Complete: JWT stands for JSON Web ____",
@@ -230,7 +230,7 @@ const quizData = {
       type: "multiple",
       options: ["a) Bubble Sort", "b) Selection Sort", "c) Quick Sort", "d) Average Sort"],
       answer: "c",
-      hint: "It uses a divide-and-conquer approach and is very fast on average.",
+      hint: "It uses a divide-and-conquer approach and is very 'fast' on average.",
     },
   ],
 }
