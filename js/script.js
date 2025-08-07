@@ -136,6 +136,10 @@ footerAbout.addEventListener("click", (e) => {
 modalConfirmBtn.addEventListener("click", handleModalConfirm)
 modalCancelBtn.addEventListener("click", hideModal)
 
+// Add these event listeners after the existing ones (around line 120)
+document.getElementById("about-nav-btn-home").addEventListener("click", () => showScreen("about"))
+document.getElementById("start-quiz-about").addEventListener("click", () => showScreen("nameEntry"))
+
 // Player name input enter key
 playerNameInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter" && playerNameInput.value.trim()) {
@@ -753,8 +757,24 @@ function saveScore(name, score, hints, isPartial = false) {
 }
 
 function getLeaderboard() {
-  const stored = localStorage.getItem("quizLeaderboard")
-  return stored ? JSON.parse(stored) : []
+  try {
+    const stored = localStorage.getItem("quizLeaderboard")
+    if (!stored) return []
+    
+    const parsed = JSON.parse(stored)
+    // Validate that it's an array
+    if (!Array.isArray(parsed)) {
+      console.warn("Invalid leaderboard data, resetting...")
+      localStorage.removeItem("quizLeaderboard")
+      return []
+    }
+    
+    return parsed
+  } catch (error) {
+    console.warn("Corrupted leaderboard data, resetting:", error)
+    localStorage.removeItem("quizLeaderboard")
+    return []
+  }
 }
 
 function loadLeaderboard() {
