@@ -14,227 +14,7 @@ let hintsUsed = 0
 let showHint = false
 let wrongAnswers = []
 let playerName = ""
-let shuffledQuestions = {}
-
-// Quiz Data
-const quizData = {
-  easy: [
-    {
-      question: "What does CPU stand for in computing?",
-      type: "multiple",
-      options: [
-        "a) Central Processing Unit",
-        "b) Computer Programming Utility",
-        "c) Core Processing Unit",
-        "d) Central Program Utility",
-      ],
-      answer: "a",
-      hint: "It’s called the ‘brain’ of the computer—and it processes instructions centrally.",
-    },
-    {
-      question: "HTML is used to style web pages. True or False?",
-      type: "boolean",
-      answer: false,
-      hint: "HTML structures, but something else does the styling.",
-    },
-    {
-      question: "What does 'WWW' stand for? World Wide ____",
-      type: "fill",
-      answer: "web",
-      hint: "It’s not 'webs' or 'webbing', just the common singular term.",
-    },
-    {
-      question: "Which company makes the iPhone?",
-      type: "multiple",
-      options: ["a) Apple", "b) iOS", "c) Google", "d) iPhone Inc."],
-      answer: "a",
-      hint: "Don’t let the product names confuse you—think company.",
-    },
-    {
-      question: "RAM is where files are saved permanently. True or False?",
-      type: "boolean",
-      answer: false,
-      hint: "It helps your computer *think*, but forgets everything after a reboot.",
-    },
-    {
-      question: "Complete: USB stands for Universal Serial ____",
-      type: "fill",
-      answer: "bus",
-      hint: "It sounds like something you ride... even though it's digital.",
-    },
-    {
-      question: "Which of these is a web browser?",
-      type: "multiple",
-      options: ["a) Google", "b) Computer", "c) Android", "d) Chrome"],
-      answer: "d",
-      hint: "You're probably using one right now to view this quiz!",
-    },
-    {
-      question: "WiFi requires a physical cable connection.",
-      type: "boolean",
-      answer: false,
-      hint: "The 'wireless' in WiFi is a big clue.",
-    },
-    {
-      question: "AI stands for ____ intelligence",
-      type: "fill",
-      answer: "artificial",
-      hint: "It’s the kind of intelligence that isn’t naturally born—but is man-made.",
-    },
-    {
-      question: "What is the name of Google's latest AI model?",
-      type: "multiple",
-      options: ["a) Bard", "b) Gemini", "c) ChatGPT", "d) Deepseek"],
-      answer: "b",
-      hint: "It recently replaced another AI with a poetic name.",
-    },
-  ],
-  medium: [
-    {
-      question: "Which programming language is known as the 'language of the web'?",
-      type: "multiple",
-      options: ["a) Python", "b) JavaScript", "c) Java", "d) Google Script"],
-      answer: "b",
-      hint: "It runs in every web browser and makes websites interactive.",
-    },
-    {
-      question: "Which language can you use to build both mobile apps and web apps?",
-      type: "multiple",
-      options: ["a) HTML", "b) Java", "c) JavaScript", "d) SQL"],
-      answer: "c",
-      hint: "It runs in browsers, but with frameworks like React Native, it goes mobile too.",
-    },
-    {
-      question: "Complete: CSS stands for ____ Style Sheets",
-      type: "fill",
-      answer: "cascading",
-      hint: "Think of how styles can trickle down and override each other based on priority.",
-    },
-    {
-      question: "What does API stand for?",
-      type: "multiple",
-      options: [
-        "a) Application Programming Interface",
-        "b) Advanced Programming Integration",
-        "c) Automated Program Interaction",
-        "d) Application Process Integration",
-      ],
-      answer: "a",
-      hint: "It lets apps 'talk' to each other—think: application + coding + connection point.",
-    },
-    {
-      question: "Python is a compiled programming language.",
-      type: "boolean",
-      answer: false,
-      hint: "Python code is interpreted, not compiled to machine code beforehand.",
-    },
-    {
-      question: "Complete: SQL stands for Structured ____ Language",
-      type: "fill",
-      answer: "query",
-      hint: "In SQL, you don’t give commands—you ask. That’s why it starts with a ‘Q’.",
-    },
-    {
-      question: "Which HTTP status code indicates 'Not Found'?",
-      type: "multiple",
-      options: ["a) 200", "b) 301", "c) 404", "d) 500"],
-      answer: "c",
-      hint: "You've probably seen this error code when a webpage doesn't exist. Usually like ___ not found.",
-    },
-    {
-      question: "What does “NaN” mean in JavaScript?",
-      type: "multiple",
-      options: ["a) Not a Node", "b) Null and Nil", "c) Not a Number", "d) No assigned Name"],
-      answer: "c",
-      hint: "It’s what you get when JavaScript tries to do math with nonsense.",
-    },
-    {
-      question: "Complete: IDE stands for Integrated Development ____",
-      type: "fill",
-      answer: "environment",
-      hint: "Starts with the letter 'E'. Think of it as the digital workspace where everything a developer needs is built in.",
-    },
-    {
-      question: "Which of these is NOT a database management system?",
-      type: "multiple",
-      options: ["a) MySQL", "b) PostgreSQL", "c) Redis", "d) Git"],
-      answer: "d",
-      hint: "One of these tracks code, not data tables.",
-    },
-  ],
-  hard: [
-    {
-      question: "What is the time complexity of binary search?",
-      type: "multiple",
-      options: ["a) O(n)", "b) O(log n)", "c) O(n²)", "d) O(1)"],
-      answer: "b",
-      hint: "Binary search eliminates half the possibilities with each step.",
-    },
-    {
-      question: "TCP/IP operates at the Network Layer of the OSI model.",
-      type: "boolean",
-      answer: false,
-      hint: "TCP operates at the Transport layer, IP at the Network layer.",
-    },
-    {
-      question: "Complete: The command to install packages in Node.js is 'npm ____'",
-      type: "fill",
-      answer: "install",
-      hint: "You run this to bring dependencies into your project. Like after downloading an app you need to install it.",
-    },
-    {
-      question: "Which design pattern ensures a class has only one instance?",
-      type: "multiple",
-      options: ["a) Static", "b) Observer", "c) Singleton", "d) Monostate"],
-      answer: "c",
-      hint: "The name suggests there can only be one.",
-    },
-    {
-      question: "In web development, localStorage persists data even after the browser is closed.",
-      type: "boolean",
-      answer: true,
-      hint: "It’s not like sessionStorage—it sticks around.",
-    },
-    {
-      question: "Complete: CRUD stands for Create, Read, Update, ____",
-      type: "fill",
-      answer: "delete",
-      hint: "After creating and updating data, sometimes you need to remove it too.",
-    },
-    {
-      question: "What does ACID stand for in database transactions?",
-      type: "multiple",
-      options: [
-        "a) Atomicity, Consistency, Isolation, Durability",
-        "b) Authentication, Consistency, Integration, Data",
-        "c) Automated, Consistent, Integrated, Distributed",
-        "d) Advanced, Centralized, Isolated, Distributed",
-      ],
-      answer: "a",
-      hint: "Think of transactions as needing to be all-or-nothing, correct, independent, and permanent.",
-    },
-    {
-      question: "The programming language Go was developed at Google.",
-      type: "boolean",
-      answer: true,
-      hint: "Its nickname is Golang, and it was created to improve productivity at a big tech company famous for search.",
-    },
-    {
-      question: "Complete: JWT stands for JSON Web ____",
-      type: "fill",
-      answer: "token",
-      hint: "Think of a small digital object you present to prove who you are—like a key in disguise.",
-    },
-    {
-      question: "Which sorting algorithm has the best average-case time complexity?",
-      type: "multiple",
-      options: ["a) Bubble Sort", "b) Selection Sort", "c) Quick Sort", "d) Average Sort"],
-      answer: "c",
-      hint: "It uses a divide-and-conquer approach and is very 'fast' on average.",
-    },
-  ],
-}
-
+let sessionQuestions = { easy: [], medium: [], hard: [] }
 
 // DOM Elements
 const welcomeScreen = document.getElementById("welcome-screen")
@@ -244,6 +24,9 @@ const resultsScreen = document.getElementById("results-screen")
 const gameOverScreen = document.getElementById("game-over-screen")
 const leaderboardScreen = document.getElementById("leaderboard-screen")
 const aboutScreen = document.getElementById("about-screen")
+
+// Floating Action Button
+const floatingHomeBtn = document.getElementById("floating-home-btn")
 
 // Welcome screen elements
 const startBtn = document.getElementById("start-btn")
@@ -257,6 +40,7 @@ const startAnonymousBtn = document.getElementById("start-anonymous-btn")
 // Header elements
 const headerDarkModeToggle = document.getElementById("header-dark-mode-toggle")
 const headerThemeIcon = document.getElementById("header-theme-icon")
+const homeNavBtn = document.getElementById("home-nav-btn")
 const leaderboardNavBtn = document.getElementById("leaderboard-nav-btn")
 const aboutNavBtn = document.getElementById("about-nav-btn")
 
@@ -323,8 +107,10 @@ viewLeaderboardBtn.addEventListener("click", () => showScreen("leaderboard"))
 startWithNameBtn.addEventListener("click", startQuizWithName)
 startAnonymousBtn.addEventListener("click", startQuizAnonymous)
 headerDarkModeToggle.addEventListener("change", toggleDarkMode)
+homeNavBtn.addEventListener("click", () => showScreen("welcome"))
 leaderboardNavBtn.addEventListener("click", () => showScreen("leaderboard"))
 aboutNavBtn.addEventListener("click", () => showScreen("about"))
+floatingHomeBtn.addEventListener("click", () => showScreen("welcome"))
 submitBtn.addEventListener("click", submitAnswer)
 hintBtn.addEventListener("click", useHint)
 playAgainBtn.addEventListener("click", () => showScreen("welcome"))
@@ -366,8 +152,8 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleDarkMode()
   }
 
-  // Shuffle questions on load
-  shuffleQuestions()
+  // Generate session questions on load
+  generateSessionQuestions()
 
   showScreen("welcome")
   loadLeaderboard()
@@ -380,11 +166,38 @@ function toggleDarkMode() {
   localStorage.setItem("theme", isDark ? "dark" : "light")
 }
 
-function shuffleQuestions() {
-  shuffledQuestions = {
-    easy: [...quizData.easy].sort(() => Math.random() - 0.5),
-    medium: [...quizData.medium].sort(() => Math.random() - 0.5),
-    hard: [...quizData.hard].sort(() => Math.random() - 0.5),
+function generateSessionQuestions() {
+  // Randomly select 10 questions from each difficulty level
+  sessionQuestions.easy = getRandomQuestions(quizData.easy, 10)
+  sessionQuestions.medium = getRandomQuestions(quizData.medium, 10)
+  sessionQuestions.hard = getRandomQuestions(quizData.hard, 10)
+}
+
+function getRandomQuestions(questionPool, count) {
+  const shuffled = [...questionPool].sort(() => Math.random() - 0.5)
+  return shuffled.slice(0, Math.min(count, shuffled.length))
+}
+
+function updateFloatingButton() {
+  const shouldShow = gameState === "leaderboard" || gameState === "about" || gameState === "results" || gameState === "gameOver"
+  floatingHomeBtn.style.display = shouldShow ? "block" : "none"
+}
+
+function updateNavButtons() {
+  // Remove active class from all nav buttons
+  document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'))
+  
+  // Add active class to current screen button
+  switch(gameState) {
+    case "welcome":
+      homeNavBtn.classList.add('active')
+      break
+    case "leaderboard":
+      leaderboardNavBtn.classList.add('active')
+      break
+    case "about":
+      aboutNavBtn.classList.add('active')
+      break
   }
 }
 
@@ -422,6 +235,8 @@ function showScreen(screenName) {
   }
 
   gameState = screenName
+  updateFloatingButton()
+  updateNavButtons()
 }
 
 function startQuizWithName() {
@@ -460,7 +275,7 @@ function resetGame() {
 
   resetLives()
   updateHintsDisplay()
-  shuffleQuestions() // Shuffle questions for each new game
+  generateSessionQuestions() // Generate new questions for each game session
 }
 
 function resetLives() {
@@ -478,7 +293,7 @@ function startQuiz() {
 }
 
 function getCurrentQuestion() {
-  return shuffledQuestions[currentDifficulty][currentQuestionIndex]
+  return sessionQuestions[currentDifficulty][currentQuestionIndex]
 }
 
 function loadQuestion() {
@@ -593,7 +408,7 @@ function updateSubmitButton() {
 }
 
 function startTimer() {
-  timeLeft = 20
+  timeLeft = 30
   timerActive = true
   updateTimerDisplay()
 

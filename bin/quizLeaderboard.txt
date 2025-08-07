@@ -1,0 +1,115 @@
+[{id: 1754547487485, name: "kent", score: 30, hintsUsed: 0, isPartial: false,…},…]
+0
+: 
+{id: 1754547487485, name: "kent", score: 30, hintsUsed: 0, isPartial: false,…}
+1
+: 
+{id: 1754547227500, name: "Cassandra", score: 30, hintsUsed: 1, isPartial: false,…}
+2
+: 
+{id: 1754555471524, name: "juuwil", score: 29, hintsUsed: 1, isPartial: false,…}
+3
+: 
+{id: 1754547063709, name: "Anonymous", score: 28, hintsUsed: 2, isPartial: false,…}
+4
+: 
+{id: 1754429885810, name: "CyberSphinx", score: 28, hintsUsed: 3, isPartial: false,…}
+5
+: 
+{id: 1754459327684, name: "kent", score: 28, hintsUsed: 3, isPartial: false,…}
+6
+: 
+{id: 1754574132717, name: "Cypher", score: 27, hintsUsed: 3, isPartial: false,…}
+7
+: 
+{id: 1754453626303, name: "Anonymous", score: 26, hintsUsed: 2, isPartial: false,…}
+8
+: 
+{id: 1754451405766, name: "Althea L. Eduria", score: 26, hintsUsed: 3, isPartial: false,…}
+9
+: 
+{id: 1754553434731, name: "KYLE", score: 24, hintsUsed: 1, isPartial: true,…}
+10
+: 
+{id: 1754452055435, name: "Kerl Patrick A Batis", score: 23, hintsUsed: 2, isPartial: true,…}
+11
+: 
+{id: 1754448325564, name: "aleandra talines", score: 20, hintsUsed: 3, isPartial: true,…}
+12
+: 
+{id: 1754449938820, name: "reins enerios", score: 18, hintsUsed: 2, isPartial: true,…}
+13
+: 
+{id: 1754464293000, name: "Anonymous", score: 18, hintsUsed: 2, isPartial: true,…}
+14
+: 
+{id: 1754451103613, name: "Ralph Lawrence Luza", score: 18, hintsUsed: 3, isPartial: true,…}
+15
+: 
+{id: 1754447690131, name: "Anonymous", score: 17, hintsUsed: 0, isPartial: true,…}
+16
+: 
+{id: 1754451755773, name: "amielle james nicola", score: 16, hintsUsed: 0, isPartial: true,…}
+17
+: 
+{id: 1754465906029, name: "James", score: 16, hintsUsed: 1, isPartial: true,…}
+18
+: 
+{id: 1754538885444, name: "BRYLLE", score: 16, hintsUsed: 1, isPartial: true,…}
+19
+: 
+{id: 1754452373999, name: "Khalil Dubz", score: 16, hintsUsed: 3, isPartial: true,…}
+20
+: 
+{id: 1754450824902, name: "janel p. obrador", score: 14, hintsUsed: 0, isPartial: true,…}
+21
+: 
+{id: 1754553220860, name: "KYLE", score: 14, hintsUsed: 0, isPartial: true,…}
+22
+: 
+{id: 1754454564261, name: "Hatdog", score: 14, hintsUsed: 1, isPartial: true,…}
+23
+: 
+{id: 1754540800620, name: "sophia", score: 14, hintsUsed: 1, isPartial: true,…}
+24
+: 
+{id: 1754555003648, name: "Imbotiting", score: 14, hintsUsed: 3, isPartial: true,…}
+25
+: 
+{id: 1754447854707, name: "-", score: 13, hintsUsed: 3, isPartial: true,…}
+26
+: 
+{id: 1754453154460, name: "Advo", score: 12, hintsUsed: 0, isPartial: true,…}
+27
+: 
+{id: 1754448722908, name: "jay-p pagsiat", score: 12, hintsUsed: 3, isPartial: true,…}
+28
+: 
+{id: 1754449725963, name: "arnolds pajaros", score: 12, hintsUsed: 3, isPartial: true,…}
+29
+: 
+{id: 1754447525741, name: "Anonymous", score: 11, hintsUsed: 1, isPartial: true,…}
+30
+: 
+{id: 1754468432567, name: "Raven", score: 10, hintsUsed: 0, isPartial: true,…}
+31
+: 
+{id: 1754453844562, name: "Yash", score: 10, hintsUsed: 1, isPartial: true,…}
+32
+: 
+{id: 1754448066611, name: "carlo cuarteros", score: 9, hintsUsed: 1, isPartial: true,…}
+33
+: 
+{id: 1754450544242, name: "Rein D. Camaro", score: 9, hintsUsed: 1, isPartial: true,…}
+34
+: 
+{id: 1754451571952, name: "Adam Matthew Mermida", score: 9, hintsUsed: 1, isPartial: true,…}
+35
+: 
+{id: 1754454433243, name: "Anonymous", score: 8, hintsUsed: 2, isPartial: true,…}
+36
+: 
+{id: 1754448540138, name: "eilkim jasper", score: 7, hintsUsed: 1, isPartial: true,…}
+37
+: 
+{id: 1754538568926, name: "Shan", score: 6, hintsUsed: 1, isPartial: true,…}

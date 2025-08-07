@@ -3,28 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google WoW Quiz 2025</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/quiz.css">
-    <link rel="stylesheet" href="css/results.css">
-    <link rel="stylesheet" href="css/game-over.css">
-    <link rel="stylesheet" href="css/leaderboard.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/dark-mode.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/welcome.css">
-    <link rel="stylesheet" href="css/name-entry.css">
-    
+    <title>Google Week of Welcome Quiz 2025</title>
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Floating Action Button -->
+    <div id="floating-home-btn" class="floating-home-btn" style="display: none;">
+        <button class="fab-btn" title="Back to Home">
+            <span class="fab-icon">🏠</span>
+        </button>
+    </div>
+
     <!-- Header -->
     <header class="site-header">
         <div class="header-container">
@@ -37,9 +29,10 @@
                     <span class="logo-l">l</span>
                     <span class="logo-e">e</span>
                 </div>
-                <div class="site-title">WoW Quiz 2025</div>
+                <div class="site-title">Week of Welcome Quiz 2025</div>
             </div>
             <nav class="header-nav">
+                <button id="home-nav-btn" class="nav-btn">🏠 Home</button>
                 <button id="leaderboard-nav-btn" class="nav-btn">🏆 Leaderboard</button>
                 <button id="about-nav-btn" class="nav-btn">ℹ️ About</button>
                 <div class="theme-toggle-nav">
@@ -68,8 +61,8 @@
                                 <span class="stat-label">Questions</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-number">3</span>
-                                <span class="stat-label">Difficulty Levels</span>
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Question Pool</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number">5</span>
@@ -81,12 +74,12 @@
                     <div class="rules-card">
                         <h3>📋 How to Play:</h3>
                         <ul>
-                            <li>20 questions total (10 Easy, 10 Medium, 10 Hard)</li>
+                            <li>30 questions randomly selected from 50+ question pool</li>
                             <li>You have 5 lives - lose all lives and the quiz ends</li>
                             <li>30 seconds per question with timer</li>
                             <li>3 hints available throughout the quiz</li>
                             <li>Select your answer and click Submit</li>
-                            <li>Questions are randomized each time!</li>
+                            <li>Each quiz session is unique with different questions!</li>
                         </ul>
                     </div>
 
@@ -292,7 +285,7 @@
                         <ul>
                             <li><strong>Three Difficulty Levels:</strong> Easy, Medium, and Hard questions</li>
                             <li><strong>Question Types:</strong> Multiple choice, True/False, and Fill-in-the-blank</li>
-                            <li><strong>Randomized Order:</strong> Questions are shuffled for a unique experience each time</li>
+                            <li><strong>Randomized Selection:</strong> 30 questions randomly selected from 50+ question pool</li>
                             <li><strong>Local Leaderboard:</strong> Compete with others on the same device</li>
                             <li><strong>Hint System:</strong> Get help when you need it (limited to 3 hints)</li>
                         </ul>
@@ -305,6 +298,7 @@
                             <li>Progress tracking and detailed results</li>
                             <li>Share your results with friends</li>
                             <li>Review wrong answers after completion</li>
+                            <li>Floating navigation for easy access</li>
                         </ul>
                     </div>
                     <div class="about-actions">
@@ -322,8 +316,8 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>GDGoC USTP Week of Welcome Quiz 2025</h4>
-                    <p>Test your tech knowledge and compete with others in this comprehensive technology quiz.</p>
+                    <h4>Google Week of Welcome Quiz 2025</h4>
+                    <p>Test your tech knowledge and compete with others in this comprehensive technology quiz with randomized questions.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -336,14 +330,15 @@
                 <div class="footer-section">
                     <h4>Stats</h4>
                     <ul>
-                        <li>30 Tech Questions</li>
+                        <li>50+ Tech Questions</li>
+                        <li>30 Random Per Session</li>
                         <li>3 Difficulty Levels</li>
-                        <li>Local Leaderboard</li>
+                        <li>Unlimited Attempts</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 GDGoC USTP Week of Welcome Quiz. Made with love by <a href="https://github.com/CyberSphinxxx" target="_blank">@johnlemargonzales</a> 🚀</p>
+                <p>&copy; 2025 Google Week of Welcome Quiz. Built for learning and fun! 🚀</p>
             </div>
         </div>
     </footer>
@@ -360,6 +355,7 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="/js/questions.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
