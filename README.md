@@ -1,6 +1,6 @@
-# Google Week of Welcome Quiz 2025
+# Geodetic Engineer Subject Quiz 
 
-Test your tech knowledge and compete with others in this interactive quiz designed for Google's Week of Welcome 2025!
+Test your GeodEr knowledge and compete with others in this interactive quiz designed for Geodetic Engineer Subject!
 
 ## 📋 Overview
 
