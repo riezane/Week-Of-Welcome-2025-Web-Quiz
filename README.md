@@ -1,6 +1,6 @@
-# Geodetic Engineer Subject Quiz 
+# GDGoC Google Week of Welcome 2025 Quiz 
 
-Test your GeodEr knowledge and compete with others in this interactive quiz designed for Geodetic Engineer Subject!
+Test your tech knowledge and compete with others in this interactive quiz designed for Week of Welcome 2025!
 
 ## 📋 Overview
 
